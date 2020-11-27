@@ -1,5 +1,25 @@
       @import "variable";
       @media all and (min-width: 320px) {
+          //<!-- section__services | start -->
+          .section_section__services {
+              background-color: #ffffff;
+          }
+          .section__description_2,
+          .section__description_3,
+          .section__description_4,
+          .section__description_5,
+          .section__description_6 {
+              display: none;
+          }
+          .section_section__services h1 {
+              display: block;
+              color: #A88A8A;
+              font-family: Mak;
+              font-style: normal;
+              font-weight: 300;
+              font-size: 32px;
+              line-height: 38px;
+          }
           .border {
               width: 283px;
               height: 1054px;
@@ -24,8 +44,10 @@
               color: $fontColorMain;
           }
           .button_section__services {
+              position: relative;
+              left: 50%;
+              transform: translate(-50%, 0);
               background: #A88A8A;
-              padding: 5px 10px;
               color: #ffffff;
               width: 151px;
               height: 36px;
@@ -34,11 +56,41 @@
               font-weight: normal;
               font-size: 12px;
               line-height: 16px;
-              text-align: justify;
+              text-align: center;
           }
           .button_section__services:hover {
               background: #7a5e5e;
           }
+          //<!-- section__services | end -->
+          //<!-- section__price | start -->
+          .section_section__price h1 {
+              color: #A88A8A;
+              text-align: center;
+              font-family: Mak;
+              font-style: normal;
+              font-weight: 300;
+              font-size: 32px;
+              line-height: 38px;
+          }
+          .section_section__price p {
+              font-family: Didact Gothic;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 12px;
+              line-height: 16px;
+              text-transform: uppercase;
+          }
+          .section_section__price img {
+              width: 16px;
+              height: 8px;
+              margin-right: 25px;
+          }
+          .section_section__price li {
+              list-style-type: none;
+              display: flex;
+              align-items: center;
+          }
+          //<!-- section__price | end -->
       }
       
       @media all and (min-width: 768px) {}

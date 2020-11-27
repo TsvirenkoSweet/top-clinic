@@ -7,10 +7,6 @@
         color: #FFFFFF;
     }
     
-    .section_section__services h1 {
-        display: none;
-    }
-    
     @media (min-width: 320px) and (max-width: 768px) {
         .hero h1 {
             padding: 120px 25px 0px 25px;
@@ -23,15 +19,6 @@
             margin: 171px 25px 0px 25px;
             width: 229px;
             height: 37px;
-        }
-        .section_section__services h1 {
-            display: block;
-            color: #A88A8A;
-            font-family: Mak;
-            font-style: normal;
-            font-weight: 300;
-            font-size: 32px;
-            line-height: 38px;
         }
     }
     
