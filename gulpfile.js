@@ -41,7 +41,7 @@ gulp.task('svgSprite', function () {
             $('[stroke]').removeAttr('stroke');
             $('[style]').removeAttr('style');
           },
-        //   parserOptions: {xmlMode: true}
+          parserOptions: {xmlMode: true}
         }))
         .pipe(replace('&gt;', '>'))
         .pipe(svgSprite({
@@ -74,6 +74,7 @@ gulp.task('styles', function () {
 gulp.task('scripts', function() {
     return gulp.src([
         './dev/js/libs/jquery/jquery-3.4.1.js',
+        './dev/js/libs/jqueryTouchSwipe/jquery.touchSwipe.js',
         './dev/js/libs/slick/slick.min.js',
     ])
         .pipe(concat('libs.min.js'))

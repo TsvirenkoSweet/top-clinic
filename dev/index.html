@@ -22,16 +22,47 @@
 <body>
 	<!-- header | start -->
 	<header class="header">
-		<nav class="menu_inner">
-			<ul class="menu nav-menu">
-				<li class="menu-item"><a href="#">Услуги</a></li>
-				<li class="menu-item"><a href="#">Цены</a></li>
-				<li class="menu-item"><a href="#">О нас</a></li>
-				<li class="menu-item"><a href="#">Клиника</a></li>
-				<li class="menu-item"><a href="#">Магазин</a></li>
-			</ul>
-		</nav>
+		<div class="header__container">
+			<div id="showHideMobileMenu" class="header__show-mobile-menu">
+				<div class="header__show-mobile-menu__burger">
+					<div class="header__show-mobile-menu__burger__item"></div>
+					<div class="header__show-mobile-menu__burger__item"></div>
+					<div class="header__show-mobile-menu__burger__item"></div>
+				</div>
+				<div class="header__show-mobile-menu__text">Menu</div>
+			</div>
+			<div class="header__logo">
+				<a href="#">
+					<img class="logo" src="./img/svg/logo.svg" alt="logo">
+				</a>
+			</div>
+			<nav class="menu_inner">
+				<ul class="menu nav-menu">
+					<li class="menu-item">
+						<svg class="icon icon-arrow-down"><use xlink:href="./img/svg/sprite.svg#cli_arrow"></use></svg>
+						<a href="#">Услуги</a>
+					</li>
+					<li class="menu-item">
+						<svg class="icon icon-arrow-down"><use xlink:href="./img/svg/sprite.svg#cli_arrow"></use></svg>
+						<a href="#">Цены</a>
+					</li>
+					<li class="menu-item">
+						<svg class="icon icon-arrow-down"><use xlink:href="./img/svg/sprite.svg#cli_arrow"></use></svg>
+						<a href="#">О нас</a>
+					</li>
+					<li class="menu-item">
+						<svg class="icon icon-arrow-down"><use xlink:href="./img/svg/sprite.svg#cli_arrow"></use></svg>
+						<a href="#">Клиника</a>
+					</li>
+					<li class="menu-item">
+						<svg class="icon icon-arrow-down"><use xlink:href="./img/svg/sprite.svg#cli_arrow"></use></svg>
+						<a href="#">Магазин</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
 	</header>
+
 	<!-- header | end -->
 
 	<!-- main | start -->

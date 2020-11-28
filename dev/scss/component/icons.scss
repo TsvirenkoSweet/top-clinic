@@ -1,5 +1,14 @@
 @import "variable";
 
+.icon {
+  &-arrow-down {
+    width: 23px;
+    height: 20px;
+    fill: #D8C594;
+    position: relative;
+    top: 3px;
+  }
+}
 
 @media all and (min-width: 768px) {
 
