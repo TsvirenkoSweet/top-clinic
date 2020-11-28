@@ -94,29 +94,6 @@ a:active {
     color: inherit;
 }
 
-.hero {
-    background-image: url(/img/image/header_image.jpg);
-    width: 100%;
-    height: 100vh;
-}
-
-.section_section__services h1 {
-    display: none;
-}
-
-.container h2 {
-    color: $fontColorMain;
-    font-family: Didact Gothic;
-    font-style: normal;
-    font-weight: normal;
-    font-size: $MainFont;
-    line-height: 18px;
-}
-
-.section__description {
-    background-color: $ServiceColor;
-}
-
 @media all and (min-width: 320px) {}
 
 @media all and (min-width: 768px) {}

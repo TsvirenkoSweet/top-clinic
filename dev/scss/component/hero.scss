@@ -1,49 +1,63 @@
-    @import "variable";
-    .hero h1 {
-        font-family: Mak;
-        font-style: normal;
-        position: absolute;
-        font-weight: 300;
-        color: #FFFFFF;
-    }
-    
-    @media (min-width: 320px) and (max-width: 768px) {
-        .hero h1 {
-            padding: 120px 25px 0px 25px;
-            font-size: 32px;
-            line-height: 38px;
-            width: 281px;
-            height: 37px;
-        }
-        .hero img {
-            margin: 171px 25px 0px 25px;
-            width: 229px;
-            height: 37px;
-        }
-    }
-    
-    @media all and (min-width: 768px) {
-        .hero h1 {
-            font-size: 52px;
-            line-height: 62px;
-            width: 376px;
-            height: 60px;
-        }
-        .hero img {
-            width: 376px;
-            height: 60px;
-        }
-    }
-    
-    @media all and (min-width: 1500px) {
-        .hero h1 {
-            font-size: 102px;
-            line-height: 122px;
-            width: 737px;
-            height: 117px;
-        }
-        .hero img {
-            width: 737px;
-            height: 117px;
-        }
-    }
+      @import "variable";
+      .hero {
+          background-image: url(/img/image/header_image.jpg);
+          background-position: center;
+          background-size: cover;
+          width: 100%;
+          height: 351px;
+          h1 {
+              font-family: Mak;
+              font-style: normal;
+              font-weight: 300;
+              color: #FFFFFF;
+          }
+      }
+      
+      @media (min-width: 320px) and (max-width: 768px) {
+          .hero {
+              h1 {
+                  padding: 120px 0px 0px 0px;
+                  font-size: 32px;
+                  line-height: 38px;
+                  text-align: center;
+              }
+              img {
+                  position: relative;
+                  left: 50%;
+                  transform: translate(-50%, 0);
+                  margin-top: 15px;
+                  width: 229px;
+                  height: 37px;
+              }
+          }
+      }
+      
+      @media all and (min-width: 768px) {
+          .hero {
+              h1 {
+                  font-size: 52px;
+                  line-height: 62px;
+                  width: 376px;
+                  height: 60px;
+              }
+              img {
+                  width: 376px;
+                  height: 60px;
+              }
+          }
+      }
+      
+      @media all and (min-width: 1500px) {
+          .hero {
+              h1 {
+                  font-size: 102px;
+                  line-height: 122px;
+                  width: 737px;
+                  height: 117px;
+              }
+              img {
+                  width: 737px;
+                  height: 117px;
+              }
+          }
+      }
