@@ -1,13 +1,39 @@
 @import "variable";
-
-
-@media all and (min-width: 768px) {
-
+.footer {
+    background-color: rgb(190, 190, 190);
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    .contact {
+        padding: 5%;
+    }
+    h2 {
+        font-family: Mak;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 28px;
+        line-height: 38px;
+        color: #ffffff;
+    }
+    h3 {
+        font-family: Mak;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 18px;
+        color: #ffffff;
+    }
+    .map {
+        background-color: #ffffff;
+        width: 100%;
+        height: auto;
+        margin-right: 7%;
+    }
+    .container {
+        display: flex;
+    }
 }
 
-@media all and (min-width: 1500px) {
+@media all and (min-width: 768px) {}
 
-}
-
-
-
+@media all and (min-width: 1500px) {}

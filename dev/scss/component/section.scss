@@ -1,121 +1,266 @@
-      @import "variable";
-      .section_section__services h2,
-      .section__description {
-          display: none;
-      }
-      
-      .section__descriptions {
-          background-color: $ServiceColor;
-          text-align: center;
-      }
-      
-      @media all and (min-width: 320px) {
-          //<!-- section__services | start -->
-          .section_section__services {
-              .container {
-                  background-color: #ffffff;
-                  border: 1px solid #D8C594;
-                  margin: 20px 20px 20px 20px;
-                  h3 {
-                      color: $fontColorMain;
-                      font-family: Didact Gothic;
-                      font-style: normal;
-                      font-weight: normal;
-                      font-size: $MainFont;
-                      line-height: 18px;
-                      text-align: left;
-                      padding-left: 40px;
-                  }
-              }
-              img {
-                  width: 100%;
-                  height: 475px;
-              }
-              h2 {
-                  display: block;
-                  color: #A88A8A;
-                  font-family: Mak;
-                  font-style: normal;
-                  font-weight: 300;
-                  font-size: 32px;
-                  line-height: 38px;
-                  padding-top: 30px;
-                  text-align: center;
-              }
-              .section__descriptions {
-                  h3 {
-                      font-family: Mak;
-                      font-style: normal;
-                      font-weight: 300;
-                      color: #A88A8A;
-                      font-size: 22px;
-                      line-height: 26px;
-                      text-align: center;
-                      padding-top: 20px;
-                  }
-                  h4 {
-                      font-family: Didact Gothic;
-                      font-style: normal;
-                      font-weight: normal;
-                      font-size: $TextFont;
-                      line-height: 16px;
-                      text-align: justify;
-                      color: $fontColorMain;
-                      padding: 0px 30px 30px 30px;
-                  }
-              }
-              .button_section__services {
-                  background: #A88A8A;
-                  margin: 25px 0px 25px 0px;
-                  color: #ffffff;
-                  width: 151px;
-                  height: 36px;
-                  box-shadow: none;
-                  font-family: Didact Gothic;
-                  font-weight: normal;
-                  font-size: 12px;
-                  line-height: 16px;
-                  text-align: center;
-              }
-              .button_section__services:hover {
-                  background: #7a5e5e;
-              }
-          }
-          //<!-- section__services | end -->
-          //<!-- section__price | start -->
-          .section_section__price {
-              h2 {
-                  color: #A88A8A;
-                  padding-top: 30px;
-                  text-align: center;
-                  font-family: Mak;
-                  font-style: normal;
-                  font-weight: 300;
-                  font-size: 32px;
-                  line-height: 38px;
-              }
-              p {
-                  font-family: Didact Gothic;
-                  font-style: normal;
-                  font-weight: normal;
-                  font-size: 12px;
-                  line-height: 16px;
-                  text-transform: uppercase;
-              }
-              img {
-                  width: 16px;
-                  height: 8px;
-                  margin-right: 25px;
-              }
-              li {
-                  list-style-type: none;
-                  display: flex;
-                  align-items: center;
-              }
-          }
-          //<!-- section__price | end -->
-      }
-      
-      @media all and (min-width: 768px) {}
-      
-      @media all and (min-width: 1500px) {}
+@import "variable";
+header {
+    display: none;
+}
+
+.section {
+    &__services {
+        .section__descriptions {
+            background-color: $ServiceColor;
+            text-align: center;
+        }
+        .section__description {
+            display: none;
+        }
+        &__list_border {
+            border-top: 1px solid #D8C594;
+            border-left: 1px solid #D8C594;
+            border-right: 1px solid #D8C594;
+            padding: 20px 40px;
+            margin: 20px 20px 0px 20px;
+        }
+        &__img_border {
+            position: relative;
+        }
+        &__img_border:before {
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 100%;
+            top: 0px;
+            left: 20px;
+            background: #D8C594;
+            z-index: 1;
+        }
+        &__img_border:after {
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 100%;
+            top: 0px;
+            right: 20px;
+            background: #D8C594;
+            z-index: 1;
+        }
+        &__border_descriptions {
+            border-left: 1px solid #D8C594;
+            border-right: 1px solid #D8C594;
+            border-bottom: 1px solid #D8C594;
+            padding: 0px 10px 0px 10px;
+            margin: 0px 20px 0px 20px;
+        }
+        .container {
+            h3 {
+                color: $fontColorMain;
+                font-family: Didact Gothic;
+                font-style: normal;
+                font-weight: normal;
+                font-size: $MainFont;
+                line-height: 18px;
+                text-align: left;
+            }
+        }
+        img {
+            width: 100%;
+            height: 475px;
+            display: block;
+            object-fit: cover;
+            margin: 0 auto;
+        }
+        h2 {
+            display: block;
+            color: #A88A8A;
+            font-family: Mak;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 32px;
+            line-height: 38px;
+            text-align: center;
+        }
+        .section__descriptions {
+            h3 {
+                font-family: Mak;
+                font-style: normal;
+                font-weight: 300;
+                color: #A88A8A;
+                font-size: 22px;
+                line-height: 26px;
+                text-align: center;
+                padding-top: 20px;
+                margin: 0 auto;
+            }
+            h4 {
+                position: relative;
+                left: 50%;
+                transform: translate(-50%, 0);
+                font-family: Didact Gothic;
+                font-style: normal;
+                font-weight: normal;
+                font-size: $TextFont;
+                line-height: 16px;
+                text-align: justify;
+                color: $fontColorMain;
+                padding: 5%;
+            }
+        }
+        .button_section__services {
+            background: #A88A8A;
+            margin: 7% 0px 7% 0px;
+            color: #ffffff;
+            width: 151px;
+            height: 36px;
+            box-shadow: none;
+            font-family: Didact Gothic;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: center;
+        }
+        .button_section__services:hover {
+            background: #7a5e5e;
+        }
+    }
+    &__price {
+        h2 {
+            color: #A88A8A;
+            padding-top: 30px;
+            text-align: center;
+            font-family: Mak;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 32px;
+            line-height: 38px;
+        }
+        p {
+            font-family: Didact Gothic;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 16px;
+            text-transform: uppercase;
+        }
+        img {
+            width: 16px;
+            height: 8px;
+            margin-right: 25px;
+        }
+        li {
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+        }
+    }
+    &__about {
+        .about_image {
+            background-image: url(/img/image/about_us_image.jpg);
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            height: 479px;
+            display: block;
+        }
+        .section__heading {
+            font-family: Mak;
+            font-style: normal;
+            font-weight: 300;
+            color: #ffffff;
+            font-size: 32px;
+            text-align: center;
+            line-height: 38px;
+            padding-top: 27px;
+            border-top: 1px solid #D8C594;
+            margin: 20px 20px 0px 20px;
+            top: 20px;
+            position: relative;
+        }
+        &__description {
+            font-family: Didact Gothic;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: justify;
+            color: #777575;
+            padding: 8%;
+        }
+        &__image_border {
+            position: relative;
+        }
+        &__image_border:before {
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 100%;
+            top: 20px;
+            left: 20px;
+            background: #D8C594;
+            z-index: 1;
+        }
+        &__image_border:after {
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 100%;
+            top: 20px;
+            right: 20px;
+            background: #D8C594;
+            z-index: 1;
+        }
+        &__description_border {
+            border-left: 1px solid #D8C594;
+            border-right: 1px solid #D8C594;
+            border-bottom: 1px solid #D8C594;
+            margin: 0px 20px 0px 20px;
+            text-align: justify;
+        }
+    }
+    &__clinic {
+        background-color: #ffffff;
+        h2 {
+            color: #A88A8A;
+            padding: 26px 0px 20px 0px;
+            text-align: center;
+            font-family: Mak;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 32px;
+            line-height: 38px;
+        }
+        &__container_image {
+            background-color: $ServiceColor;
+            width: 100%;
+            height: 287px;
+            display: flex;
+            flex-direction: row;
+            .left_image img {
+                float: left;
+                width: 100%;
+                height: 183px;
+                background-position: center;
+                background-size: cover;
+                vertical-align: middle;
+            }
+            .right_image img {
+                float: right;
+                width: 100%;
+                height: 287px;
+                background-position: center;
+                background-size: cover;
+            }
+            .hover_right_image {
+                display: none;
+            }
+            .first_right_image:hover {
+                .hover_right_image {
+                    display: block;
+                    background-position: center;
+                    background-size: cover;
+                }
+            }
+        }
+    }
+}
+
+@media all and (min-width: 768px) {}
+
+@media all and (min-width: 1500px) {}
