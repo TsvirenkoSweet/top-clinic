@@ -1,8 +1,23 @@
 @import "variable";
 
+.btn {
+  font-family: 'Didact', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  width: 151px;
+  height: 36px;
+  background: #A88A8A;
+  color: #ffffff;
+}
 
 @media all and (min-width: 768px) {
-
+  .btn {
+    font-size: 10px;
+    width: 100px;
+    height: 26px;
+  }
 }
 
 @media all and (min-width: 1500px) {
