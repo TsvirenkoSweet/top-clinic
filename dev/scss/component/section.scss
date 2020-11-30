@@ -229,34 +229,94 @@ header {
         &__container_image {
             background-color: $ServiceColor;
             width: 100%;
-            height: 287px;
+            height: auto;
             display: flex;
             flex-direction: row;
+            overflow: hidden;
+            .left_image {
+                width: 75%;
+            }
             .left_image img {
-                float: left;
                 width: 100%;
-                height: 183px;
-                background-position: center;
-                background-size: cover;
-                vertical-align: middle;
+                float: left;
+                height: auto;
+                top: 50%;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%);
+                position: relative;
             }
             .right_image img {
                 float: right;
                 width: 100%;
-                height: 287px;
-                background-position: center;
-                background-size: cover;
+                height: auto;
+                position: relative;
             }
             .hover_right_image {
                 display: none;
+                position: absolute;
             }
             .first_right_image:hover {
                 .hover_right_image {
                     display: block;
-                    background-position: center;
-                    background-size: cover;
                 }
             }
+        }
+    }
+    &__instagram {
+        background-color: #C1B4B4;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        .instagram_border {
+            border-top: 1px solid #D8C594;
+            border-left: 1px solid #D8C594;
+            border-right: 1px solid #D8C594;
+            border-bottom: 1px solid #D8C594;
+            margin: 20px 20px 20px 20px;
+            position: relative;
+        }
+        .container_image {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: auto;
+            padding: 12% 3% 0 3%;
+        }
+        .container_image img {
+            padding: 0 5px 0 5px;
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+        }
+        h2 {
+            font-family: Mak;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 32px;
+            line-height: 38px;
+            text-align: center;
+            color: #FFFFFF;
+            padding-top: 20px;
+        }
+        .button_section__instagram {
+            position: relative;
+            left: 50%;
+            transform: translate(-50%, 0);
+            background: #FFEBE0;
+            margin: 7% 0px 7% 0px;
+            color: #A88A8A;
+            width: 151px;
+            height: 37px;
+            box-shadow: none;
+            font-family: Didact Gothic;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: center;
+        }
+        .button_section__instagram:hover {
+            background: #faddcd;
         }
     }
 }
