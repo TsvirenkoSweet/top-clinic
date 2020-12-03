@@ -4,17 +4,17 @@
           background-position: center;
           background-size: cover;
           width: 100%;
-          height: 351px;
-          display: block;
+          height: 100vh;
+          padding-top: 10%;
           h1 {
               font-family: Mak;
               font-style: normal;
               font-weight: 300;
+              text-align: center;
               color: #FFFFFF;
-              padding: 120px 0px 0px 0px;
+              padding-top: 120px;
               font-size: 32px;
               line-height: 38px;
-              text-align: center;
           }
           img {
               position: relative;
@@ -29,14 +29,19 @@
       @media all and (min-width: 768px) {
           .hero {
               h1 {
+                  padding-top: 156px;
                   font-size: 52px;
                   line-height: 62px;
                   width: 376px;
                   height: 60px;
+                  position: relative;
+                  left: 50%;
+                  transform: translate(-50%, 0);
               }
               img {
                   width: 376px;
                   height: 60px;
+                  margin-top: 75px;
               }
           }
       }
@@ -44,14 +49,19 @@
       @media all and (min-width: 1500px) {
           .hero {
               h1 {
+                  padding-top: 305px;
                   font-size: 102px;
                   line-height: 122px;
                   width: 737px;
                   height: 117px;
+                  position: relative;
+                  left: 50%;
+                  transform: translate(-50%, 0);
               }
               img {
                   width: 737px;
                   height: 117px;
+                  margin-top: 100px;
               }
           }
       }
