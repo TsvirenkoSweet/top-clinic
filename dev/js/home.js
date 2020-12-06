@@ -26,6 +26,11 @@ $(document).ready(function () {
                 }, 200);
             }
         });
+        $('.has-sub-menu .icon-arrow-down').off('click').on( 'click',function(event) {
+            event.preventDefault();
+            $(this).closest('.has-sub-menu').find('.sub-menu').slideToggle(300);
+            $(this).toggleClass('show');
+        });
         $(".menu_inner").swipe( {
             swipe:function(event, direction, distance) {
                 if ($(this).hasClass('done') && direction === 'right' && distance > 100) {

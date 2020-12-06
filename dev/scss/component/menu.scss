@@ -21,11 +21,32 @@
     width: 255px;
     background: #ffffff;
     padding: 50px 20px;
+    overflow-y: auto;
     &-item {
       padding-bottom: 30px;
+      &.has-sub-menu {
+        & > a {
+          padding-left: 12px;
+        }
+        .sub-menu {
+          display: none;
+          .menu-item {
+            padding-bottom: 0;
+            padding-top: 10px;
+            a {
+              font-size: 13px;
+            }
+          }
+        }
+        .show {
+          transform: rotate(180deg);
+          bottom: 0;
+          transition: 0.3s;
+        }
+      }
       a {
         font-size: 22px;
-        padding-left: 12px;
+        padding-left: 47px;
         text-transform: uppercase;
       }
     }
@@ -46,8 +67,36 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
+      overflow-y: unset;
       &-item {
         padding: 0 0 1px 0;
+        &.has-sub-menu {
+          position: relative;
+          .sub-menu {
+            display: block;
+            font-family: Didact,serif;
+            position: absolute;
+            top: 29px;
+            left: 15px;
+            background-color: rgba(255,255,255,.3);
+            width: 215px;
+            padding: 0 15px 7px 15px;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.3s;
+            a {
+              text-transform: none;
+            }
+          }
+          &:hover {
+            .sub-menu {
+              left: 0;
+              opacity: 1;
+              visibility: visible;
+              transition: 0.3s;
+            }
+          }
+        }
         a {
           font-size: 12px;
           padding-left: 0;
@@ -64,6 +113,17 @@
     .menu {
       width: 866px;
       &-item {
+        &.has-sub-menu {
+          .sub-menu {
+            top: 53px;
+            padding: 0 20px 20px 20px;
+            .menu-item {
+              a {
+                font-size: 16px;
+              }
+            }
+          }
+        }
         a {
           font-size: 24px;
         }
