@@ -352,6 +352,85 @@ header {
             background: #faddcd;
         }
     }
+    &__shop {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        .heading__image {
+            background-image: url(/img/image/shop_heading_image.jpg);
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            padding-bottom: 54.66%;
+        }
+        h2 {
+            font-family: Mak;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 64px;
+            line-height: 77px;
+            text-align: center;
+            color: #A88A8A;
+            padding: 130px 0 35px 0;
+        }
+        h3 {
+            font-family: Mak;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 50px;
+            line-height: 60px;
+            color: #FFFFFF;
+            text-align: center;
+            margin: 0 auto;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+            position: relative;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            .item_face {
+                background-image: url(/img/image/shop_item_face_image.jpg);
+                background-position: center;
+                background-size: cover;
+                overflow: hidden;
+                width: 100%;
+                height: 569px;
+                margin-right: 20px;
+            }
+            .item_body {
+                background-image: url(/img/image/shop_item_body_image.jpg);
+                background-position: center;
+                background-size: cover;
+                overflow: hidden;
+                width: 100%;
+                height: 569px;
+                margin-right: 20px;
+            }
+            .item_hair {
+                background-image: url(/img/image/shop_item_hair_image.jpg);
+                background-position: center;
+                background-size: cover;
+                overflow: hidden;
+                width: 100%;
+                height: 569px;
+                margin-right: 20px;
+            }
+            .item_vitamins {
+                background-image: url(/img/image/shop_item_vitamins_image.jpg);
+                background-position: center;
+                background-size: cover;
+                overflow: hidden;
+                width: 100%;
+                height: 569px;
+            }
+        }
+    }
 }
 
 @media all and (min-width: 768px) {
