@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Top Clinic</title>
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="description" content="">
+    <meta property="og:image" content="img/images/test.jpg">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#b146c4">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+    <!-- header | start -->
+    <header class="header">
+        <a class="menu-triger" href="#"></a>
+        <nav class="menu_inner">
+            <a class="menu-close" href="#"></a>
+            <ul class="menu nav-menu">
+                <li class="menu-item"><a href="#">Услуги</a></li>
+                <li class="menu-item"><a href="#">Цены</a></li>
+                <li class="menu-item"><a href="#">О нас</a></li>
+                <li class="menu-item"><a href="#">Клиника</a></li>
+                <li class="menu-item"><a href="#">Магазин</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- header | end -->
+
+    <!-- section__product | start -->
+    <section class="section section__product">
+        <div class="menu_product">
+            <ul>
+                <li><a href="">МАГАЗИН</a></li>
+                <li><img src="./img/svg/menu_vector.svg" alt=""></li>
+                <li><a href="">ЛИЦО</a></li>
+                <li><img src="./img/svg/menu_vector.svg" alt=""></li>
+                <li><a href="">КРЕМЫ</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="product_border">
+                <img src="./img/image/product_image.png" alt="">
+            </div>
+            <div class="content_product">
+                <h2 class="section__heading">CRÈME ELASTINE</h2>
+                <div class="price_product">550₴</div>
+                <ul>
+                    <h3>Действие:</h3>
+                    <li>
+                        <p>Устраняет загрязнения и бережно очищает кожу.</p>
+                    </li>
+                    <li>
+                        <p>Не сушит кожу.</p>
+                    </li>
+                    <li>
+                        <p>Не нарушает функции эпидермиса.</p>
+                    </li>
+                    <li>
+                        <p>Не оставляет жирной пленки на коже.</p>
+                    </li>
+                </ul>
+                <ul>
+                    <h3>Состав:</h3>
+                    <li>
+                        <p>Смягчающий и восстанавливающий липидный барьер компонент: масло Лесного Ореха.</p>
+                    </li>
+                    <li>
+                        <p>Успокаивающий и смягчающий компонент масло Сладкого Миндаля.</p>
+                    </li>
+                    <li>
+                        <p>Антиоксидант: экстракт зародышей Пшеницы.</p>
+                    </li>
+                </ul>
+                <ul>
+                    <h3>Применение:</h3>
+                    <li>
+                        <p>Удаляет все следы макияжа и загрязнения, подготавливает кожу к дальнейшему уходу.</p>
+                    </li>
+                    <li>
+                        <p>Молочко в небольшом количестве нанести на всю поверхность лица, шеи и декольте и помассировать легкими круговыми движениями. Смыть при помощи прохладных влажных компрессов или спонжа. Повторить до полного очищения кожи. Молочко
+                            используется ежедневно (утром и вечером).</p>
+                    </li>
+                    <li>
+                        <p>В этой фазе ухода рекомендуется начать с удаления макияжа с зоны вокруг глаз с помощью специального средства.</p>
+                    </li>
+                </ul>
+                <button class="section_product__button">В корзину</button>
+            </div>
+        </div>
+    </section>
+    <!-- section__product | end -->
+
+    <!-- footer | start -->
+    <footer class="footer">
+        <div class="container">
+            <div class="contact">
+                <h2>Контакты</h2>
+                <ul>
+                    <li><a href="tel:+3099102929">+3099102929</a></li>
+                    <li><a href="mailto:www@gmail.com">www@gmail.com</a></li>
+                    <li><a>ул. Сумская 92</a></li>
+                </ul>
+            </div>
+            <div class="map"></div>
+        </div>
+    </footer>
+    <!-- footer | end -->
+
+    <!-- Load Scripts Start -->
+    <script>
+        var scr = {
+            "scripts": [{
+                "src": "js/libs.min.js",
+                "async": false
+            }, {
+                "src": "js/home.min.js",
+                "async": false
+            }, ]
+        };
+        ! function(t, n, r) {
+            "use strict";
+            var c = function(t) {
+                if ("[object Array]" !== Object.prototype.toString.call(t)) return !1;
+                for (var r = 0; r < t.length; r++) {
+                    var c = n.createElement("script"),
+                        e = t[r];
+                    c.src = e.src, c.async = e.async, n.body.appendChild(c)
+                }
+                return !0
+            };
+            t.addEventListener ? t.addEventListener("load", function() {
+                c(r.scripts);
+            }, !1) : t.attachEvent ? t.attachEvent("onload", function() {
+                c(r.scripts)
+            }) : t.onload = function() {
+                c(r.scripts)
+            }
+        }(window, document, scr);
+    </script>
+
+</body>
+
+</html>
