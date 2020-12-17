@@ -1,0 +1,18 @@
+@import "variable";
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media all and (min-width: 768px) {
+  .container {
+    width: 571px;
+  }
+}
+
+@media all and (min-width: 1500px) {
+  .container {
+    width: 1120px;
+  }
+}

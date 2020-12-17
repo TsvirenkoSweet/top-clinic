@@ -9,6 +9,8 @@ $(document).ready(function () {
     // });
 
     mobileMenuHandler();
+    serviceHandler();
+    priceHandler();
 
     function mobileMenuHandler() {
         $('#showHideMobileMenu').off('click').on( 'click', function () {
@@ -39,6 +41,28 @@ $(document).ready(function () {
                         $(this).removeClass('active');
                     }, 200);
                 }
+            }
+        });
+    }
+    function serviceHandler() {
+        $('.section__services__list__item').on('click', function () {
+            const s = '.section__services__description';
+            $(`${s}__item`).hide().removeClass('active');
+            $(`${s}__item[data-service-id="${$(this).data('service-list-id')}"]`).fadeIn(300);
+            $(`${s}__btn .btn`).attr('href', $(this).data('service-link'));
+        });
+    }
+    function priceHandler() {
+        $('.section__price__list__link').on('click', function () {
+            const s = '.section__price__list';
+            if ( $(this).hasClass('active')) {
+                $(this).removeClass('active').siblings(`${s}__sub`).slideUp(300);
+            } else {
+                $(`${s}__sub`).slideUp(300);
+                $(`${s}__link .icon`).removeClass('show');
+                $(`${s}__link`).removeClass('active');
+                $('.icon', this).addClass('show');
+                $(this).addClass('active').siblings(`${s}__sub`).slideDown(300);
             }
         });
     }
