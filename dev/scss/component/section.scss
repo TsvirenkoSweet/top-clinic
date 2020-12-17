@@ -1,7 +1,7 @@
 @import "variable";
 .section {
   &__heading {
-    padding: 0 5px;
+    padding: 0 4px;
     font-size: 32px;
     color: #A88A8A;
     text-align: center;
@@ -76,18 +76,110 @@
       }
     }
   }
+  &__price {
+    &__container {
+
+    }
+    .section__heading {
+      margin: 30px 0 50px 0;
+    }
+    &__list {
+      font-size: 12px;
+      padding-top: 15px;
+      font-family: Didact,serif;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      &__sub {
+        display: none;
+      }
+      &__container {
+        padding: 0 42px 20px 42px;
+      }
+      &__item {
+        &.title {
+          width: calc(100% - 75px);
+          padding-bottom: 5px;
+        }
+        &.price {
+          width: auto;
+          min-width: 75px;
+          padding-left: 5px;
+          text-align: right;
+        }
+      }
+      &__link {
+        display: flex;
+        align-items: center;
+        &__text {
+          font-family: Didact,serif;
+          font-size: 14px;
+        }
+        .icon {
+          width: 14px;
+          min-width: 14px;
+          height: 19px;
+          top: 1px;
+          margin-right: 25px;
+        }
+      }
+    }
+  }
+  &__about {
+    &__img {
+      position: relative;
+      &__top-border {
+        position: absolute;
+        top: 18px;
+        left: 18px;
+        width: calc(100% - 36px);
+        height: 1px;
+        background-color: #D8C594;
+      }
+      &:before, &:after {
+        content: '';
+        position: absolute;
+        top: 18px;
+        width: 1px;
+        height: calc(100% - 18px);
+        background-color: #D8C594;
+      }
+      &:before {
+        left: 18px;
+      }
+      &:after {
+        right: 18px;
+      }
+    }
+    &__border {
+      margin: 0 18px 20px 18px;
+      padding: 17px 0 25px 0;
+      border-left: 1px solid #d8c594;
+      border-right: 1px solid #d8c594;
+      border-bottom: 1px solid #d8c594;
+    }
+    &__content {
+      &__text {
+        font-family: Didact,serif;
+        padding: 40px 28px 0 28px;
+        font-size: 12px;
+        text-align: justify;
+      }
+    }
+  }
 }
 
 @media all and (min-width: 768px) {
   .section {
     &__heading {
-      display: none;
+      font-size: 48px;
     }
     &__services {
       background: #FFEBE0;
+      .section__heading {
+        display: none;
+      }
       &__container {
-        width: 571px;
-        margin: 0 auto;
         display: flex;
         padding-top: 43px;
       }
@@ -119,6 +211,7 @@
         min-width: 280px;
         img {
           height: 100%;
+          max-height: 500px;
           object-fit: cover;
         }
         &:before, &:after {
@@ -147,42 +240,49 @@
         }
       }
     }
+    &__price {
+     &__list {
+       font-size: 14px;
+       &__link {
+         cursor: pointer;
+       }
+     }
+    }
+    &__about {
+      margin-top: 50px;
+      &__container {
+        display: flex;
+      }
+      &__img {
+        width: 249px;
+        min-width: 249px;
+        &__top-border {
+          display: none;
+        }
+        &:before, &:after {
+          display: none;
+        }
+      }
+      &__border {
+        margin: 0;
+        padding: 0 0 0 46px;
+        border: none;
+      }
+      &__content {
+        &__text {
+          padding: 35px 0 0 0;
+        }
+      }
+    }
   }
 }
 
 @media all and (min-width: 1500px) {
   .section {
-    &__heading {
-      display: none;
-    }
     &__services {
       background: #FFEBE0;
       &__container {
-        width: 1120px;
         padding-top: 0;
-      }
-      &__list {
-        position: relative;
-        width: 0;
-        &__border {
-          border: none;
-          margin: 0;
-          padding: 0;
-          position: absolute;
-          z-index: 1;
-          top: 65px;
-          left: -65px;
-        }
-        &__items {
-          padding: 0;
-        }
-        &__item {
-          font-size: 12px;
-          margin-top: 0;
-          margin-bottom: 10px;
-          color: #777575;
-          white-space: nowrap;
-        }
       }
       &__img {
         width: 550px;
@@ -190,9 +290,6 @@
         img {
           height: 100%;
           object-fit: cover;
-        }
-        &:before, &:after {
-          display: none;
         }
       }
       &__description {
@@ -218,6 +315,28 @@
         &__btn {
           display: flex;
           justify-content: flex-end;
+        }
+      }
+    }
+    &__price {
+     &__list {
+       &__container {
+         padding: 0 42px 20px 0;
+       }
+     }
+    }
+    &__about {
+      margin: 107px 0 171px 0;
+      &__img {
+        width: 360px;
+        min-width: 360px;
+      }
+      &__border {
+        padding: 0 0 0 212px;
+      }
+      &__content {
+        &__text {
+          padding: 35px 0 0 0;
         }
       }
     }
