@@ -253,6 +253,7 @@
       margin-top: 50px;
       &__container {
         display: flex;
+        width: 617px;
       }
       &__img {
         width: 249px;
@@ -265,9 +266,11 @@
         }
       }
       &__border {
-        margin: 0;
-        padding: 0 0 0 46px;
-        border: none;
+        margin: 0 0 0 46px;
+        padding: 0 46px 36px 0;
+        border-right: 1px solid #d8c594;
+        border-bottom: 1px solid #d8c594;
+        border-left: unset;
       }
       &__content {
         &__text {
