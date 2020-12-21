@@ -11,6 +11,75 @@ $(document).ready(function () {
     mobileMenuHandler();
     serviceHandler();
     priceHandler();
+    mobileClinicSectionHandler();
+    scrollToElServiceHandler();
+
+    function scrollToElServiceHandler() {
+        $('.section__services__list__item').on('click', function (e) {
+            e.preventDefault();
+            if( $(window).outerWidth() < 768) {
+                $('html, body').animate({
+                    scrollTop: $('.section__services__description').offset().top - 82
+                }, 500);
+            }
+        });
+    }
+
+    function mobileClinicSectionHandler() {
+        addFirstStepImg();
+        function addFirstStepImg() {
+            $('.section__clinic__arrow-left').off('click').on( 'click', function () {
+                $('.section__clinic__image-container').addClass('first-img-show');
+                setTimeout(function() {
+                    const target =  $('.section__clinic__image-container.first-img-show .section__clinic__image-container__right__2');
+                    const targetWidth = target.width() - (target.width() * 0.2);
+                    target.css({ width: targetWidth - targetWidth * 0.27 });
+                    $('.section__clinic__arrow-right').addClass('active');
+                    removeFirstStapImg();
+                    addSecondStepImg();
+                }, 200);
+            });
+        }
+        function addSecondStepImg() {
+            $('.section__clinic__image-container.first-img-show .section__clinic__arrow-left').off('click').on( 'click', function () {
+                $('.section__clinic__image-container').addClass('second-img-show');
+                setTimeout(function() {
+                    const target =  $('.section__clinic__image-container.first-img-show .section__clinic__image-container__right__1');
+                    const targetWidth = target.width() - (target.width() * 0.2);
+                    target.css({ width: targetWidth - targetWidth * 0.27 });
+                    $('.section__clinic__image-container .section__clinic__image-container__right__2').css({ width: '' });
+                    $('.section__clinic__arrow-right').addClass('back-to-first');
+                    removeSecondStapImg();
+                }, 200);
+            });
+        }
+        function removeSecondStapImg() {
+            $('.section__clinic__arrow-right.active.back-to-first').off('click').on( 'click', function () {
+                $('.section__clinic__image-container').removeClass('second-img-show');
+                $('.section__clinic__arrow-right').removeClass('back-to-first');
+                $('.section__clinic__image-container .section__clinic__image-container__right__1').css({ width: '' });
+                setTimeout(function() {
+                    const target =  $('.section__clinic__image-container.first-img-show .section__clinic__image-container__right__2');
+                    const targetWidth = target.width() - (target.width() * 0.2);
+                    target.css({ width: targetWidth - targetWidth * 0.27 });
+                    $('.section__clinic__arrow-right').addClass('active');
+                    removeFirstStapImg();
+                    addSecondStepImg();
+                }, 200);
+            });
+        }
+        function removeFirstStapImg() {
+            $('.section__clinic__arrow-right.active').off('click').on( 'click', function () {
+                $('.section__clinic__image-container').removeClass('first-img-show');
+                setTimeout(function() {
+                    const target =  $('.section__clinic__image-container .section__clinic__image-container__right__2');
+                    target.css({ width: '' });
+                    $('.section__clinic__arrow-right').removeClass('active');
+                    addFirstStepImg(true);
+                }, 200);
+            });
+        }
+    }
 
     function mobileMenuHandler() {
         $('#showHideMobileMenu').off('click').on( 'click', function () {

@@ -1,12 +1,95 @@
 @import "variable";
-
+.footer {
+  background: #d4cbcb;
+  padding: 20px 20px 45px 20px;
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    &__item {
+      font-family: Didact,serif;
+      padding-bottom: 30px;
+      color: #ffffff;
+      &__title {
+        font-size: 12px;
+        text-transform: uppercase;
+      }
+      &__content {
+        font-size: 10px;
+      }
+      a {
+        color: #ffffff;
+      }
+      span {
+        display: block;
+        padding: 20px 0 0 0;
+      }
+      &.contact {
+        .footer__list__item__content {
+          padding-top: 20px;
+        }
+      }
+    }
+  }
+  .icon {
+    width: 22px;
+    height: 22px;
+    fill: #fff;
+    margin-right: 5px;
+  }
+}
 
 @media all and (min-width: 768px) {
+  .footer {
+    padding: 20px 20px 45px 20px;
 
+    &__list {
+      flex-direction: row;
+      justify-content: space-between;
+      &__item {
+        &.address {
+          order: 1;
+        }
+        &.map {
+          order: 2;
+          width: 150px;
+        }
+      }
+    }
+  }
 }
 
 @media all and (min-width: 1500px) {
-
+  .footer {
+    padding: 57px 0 73px 0;
+    &__container {
+      width: 1300px;
+    }
+    &__list {
+      &__item {
+        &__title {
+          font-size: 16px;
+        }
+        &__content {
+          font-size: 16px;
+        }
+        &.address {
+          order: 0;
+        }
+        &.map {
+          order: 0;
+          width: 259px;
+        }
+        &.mail {
+          order: 1;
+        }
+        &.contact {
+          order: 2;
+        }
+      }
+    }
+  }
 }
 
 

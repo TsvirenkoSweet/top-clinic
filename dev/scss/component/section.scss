@@ -13,6 +13,7 @@
         padding: 0 40px;
       }
       &__item {
+        font-family: 'Didact', serif;
         font-size: 14px;
         margin-top: 25px;
       }
@@ -167,6 +168,147 @@
       }
     }
   }
+  &__clinic {
+    &__arrow-left,
+    &__arrow-right {
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      z-index: 1;
+      width: 40px;
+      height: 30px;
+      transition: 0.3s;
+      .icon {
+        fill: #777575;
+        width: inherit;
+        height: inherit;
+      }
+    }
+    &__arrow-right {
+      opacity: 0;
+      visibility: hidden;
+      left: 0;
+      &.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .icon {
+        transform: rotate(90deg);
+      }
+    }
+    &__arrow-left {
+      right: 0;
+      z-index: 2;
+      .icon {
+        transform: rotate(-90deg);
+      }
+    }
+    &__image-container {
+      display: flex;
+      &.first-img-show {
+        .section__clinic__image-container__left {
+          width: 0;
+          transition: 0.2s;
+        }
+        .section__clinic__image-container__right {
+          width: 100%;
+          background: #FFEBE0;
+          transition: 0.2s;
+          .section__clinic__image-container {
+            &__right__1 {
+              width: 80%;
+              transition: 0.2s;
+            }
+            &__right__2 {
+              left: 80%;
+              top: 50%;
+              transform: translate(0, -50%);
+              transition: 0.2s;
+            }
+          }
+        }
+        &.second-img-show {
+          .section__clinic__image-container__right__1 {
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+            right: inherit;
+          }
+          .section__clinic__image-container__right__2 {
+            position: relative;
+            width: 80%;
+            top: 0;
+            transform: translate(0, 0);
+            left: inherit;
+            right: -20%;
+          }
+          .section__clinic__arrow-left {
+            display: none;
+          }
+        }
+      }
+      &__left {
+        width: 27%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #FFEBE0;
+        transition: 0.2s;
+        .section__heading {
+          display: none;
+        }
+      }
+      &__right {
+        width: 73%;
+        position: relative;
+        overflow: hidden;
+        &__1 {
+          position: relative;
+          transition: 0.3s;
+          right: 0;
+        }
+        &__2 {
+          position: absolute;
+          top: 0;
+          left: 100%;
+          z-index: 1;
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+  &__instagram {
+    background: #C1B4B4;
+    padding: 30px 0;
+    .section__heading {
+      color: #ffffff;
+    }
+    &__border {
+      margin: 0 18px;
+      padding: 17px 0 25px 0;
+      border: 1px solid #d8c594;
+    }
+    &__images {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 34px 20px;
+      margin: 0 -3px;
+    }
+    &__image {
+      padding: 0 3px;
+    }
+    &__link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 20px;
+    }
+    .btn-instagram {
+      background: #FFEBE0;
+      color: #A88A8A;
+    }
+  }
 }
 
 @media all and (min-width: 768px) {
@@ -275,7 +417,21 @@
       &__content {
         &__text {
           padding: 35px 0 0 0;
+          font-size: 16px;
         }
+      }
+    }
+    &__clinic {
+      padding: 50px 0 0 0;
+      &__container {
+        padding-bottom: 30px;
+      }
+    }
+    &__instagram {
+      &__border {
+        border: none;
+        margin: 0;
+        padding: 0;
       }
     }
   }
@@ -283,10 +439,19 @@
 
 @media all and (min-width: 1500px) {
   .section {
+    &__heading {
+      font-size: 64px;
+    }
     &__services {
       background: #FFEBE0;
       &__container {
         padding-top: 0;
+      }
+      &__list {
+        &__item {
+          font-size: 24px;
+          margin-bottom: 20px;
+        }
       }
       &__img {
         width: 550px;
@@ -303,13 +468,11 @@
         align-items: center;
         flex-wrap: wrap;
         &__sub-heading {
-          padding: 0;
-          font-size: 32px;
-          text-align: right;
+          padding: 80px 0 0 0;
+          font-size: 58px;
         }
         &__text {
-          font-size: 11px;
-          padding: 40px 0 30px 0;
+          font-size: 16px;
         }
         &__border {
           border: none;
@@ -324,25 +487,81 @@
     }
     &__price {
      &__list {
+       font-size: 16px;
        &__container {
          padding: 0 42px 20px 0;
+       }
+       &__link {
+         &__text {
+           font-size: 16px;
+         }
        }
      }
     }
     &__about {
-      margin: 107px 0 171px 0;
+      margin: 107px 0 60px 0;
+      &__container {
+        width: 1120px;
+      }
       &__img {
         width: 360px;
         min-width: 360px;
       }
       &__border {
-        padding: 0 0 0 212px;
+        padding: 0 70px 0 0;
+        margin: 0 0 0 150px;
       }
       &__content {
         &__text {
           padding: 35px 0 0 0;
         }
       }
+    }
+    &__clinic {
+      &__container {
+        padding-bottom: 30px;
+      }
+      .section__heading {
+        display: none;
+      }
+      &__arrow-left {
+        display: none;
+      }
+      &__image-container {
+        &__left {
+          width: 50%;
+          position: relative;
+          overflow: hidden;
+          .section__heading {
+            display: block;
+          }
+          img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            max-height: 543px;
+            transform: translate(0, -50%);
+          }
+        }
+        &__right {
+          position: relative;
+          width: 50%;
+          &:hover {
+            overflow: visible;
+            .section__clinic__image-container__right__1 {
+              right: 100%;
+              transition: 0.3s;
+            }
+            .section__clinic__image-container__right__2 {
+              left: 0;
+              transition: 0.3s;
+            }
+          }
+        }
+      }
+    }
+    &__instagram {
+      padding: 100px 0;
     }
   }
 }
