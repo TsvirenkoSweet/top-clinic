@@ -310,7 +310,7 @@
             color: #A88A8A;
         }
     }
-    &__list__price {
+    &__laser_medicine {
         background: #ffffff;
         &__container {
             &__slider {
@@ -318,6 +318,10 @@
                 height: auto;
                 overflow: hidden;
                 position: relative;
+                .slick-slide:focus,
+                .item:focus {
+                    outline: none;
+                }
                 .slick-arrow {
                     position: absolute;
                     z-index: 5;
@@ -346,7 +350,7 @@
                 background-position: center;
                 background-size: cover;
             }
-            .header__border {
+            .header__border__laser_medicine {
                 border-top: 1px solid #D8C594;
                 border-bottom: 1px solid #D8C594;
                 p {
@@ -365,7 +369,7 @@
                 font-weight: 300;
                 font-size: 22px;
                 line-height: 26px;
-                padding-bottom: 25px;
+                padding: 25px 0 25px 0;
                 text-align: center;
                 color: #A88A8A;
             }
@@ -395,7 +399,195 @@
                     color: #777575;
                 }
             }
-            .btn-service_price {
+            .btn-laser_medicine {
+                margin: 0 0 40px 0;
+            }
+        }
+    }
+    &__face {
+        background: #ffffff;
+        &__container {
+            &__slider {
+                width: 100%;
+                height: auto;
+                overflow: hidden;
+                position: relative;
+                .slick-slide:focus,
+                .item:focus {
+                    outline: none;
+                }
+                .slick-arrow {
+                    position: absolute;
+                    z-index: 5;
+                    width: 30px;
+                    height: 15px;
+                    cursor: pointer;
+                }
+                .slick-next {
+                    right: 20px;
+                    top: 12px;
+                }
+                .slick-prev {
+                    left: 20px;
+                    top: 12px;
+                }
+                .slick-track {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                }
+            }
+            img {
+                width: 100%;
+                height: auto;
+                overflow: hidden;
+                background-position: center;
+                background-size: cover;
+            }
+            .header__border__face {
+                border-top: 1px solid #D8C594;
+                border-bottom: 1px solid #D8C594;
+                p {
+                    font-family: Didact Gothic;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 16px;
+                    text-align: center;
+                    color: #A88A8A;
+                }
+            }
+            h2 {
+                font-family: Mak;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 22px;
+                line-height: 26px;
+                padding: 25px 0 25px 0;
+                text-align: center;
+                color: #A88A8A;
+            }
+            &__text {
+                padding: 25px 45px 30px 45px;
+                ul li {
+                    list-style-type: disc;
+                    margin-left: 15px;
+                }
+                h3 {
+                    padding-top: 20px;
+                    font-family: Didact Gothic;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 16px;
+                    text-transform: uppercase;
+                    color: #A88A8A;
+                }
+                p {
+                    font-family: Didact Gothic;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 16px;
+                    text-align: justify;
+                    color: #777575;
+                }
+            }
+            .btn-face {
+                margin: 0 0 40px 0;
+            }
+        }
+    }
+    &__body_correction {
+        background: #ffffff;
+        &__container {
+            &__slider {
+                width: 100%;
+                height: auto;
+                overflow: hidden;
+                position: relative;
+                .slick-slide:focus,
+                .item:focus {
+                    outline: none;
+                }
+                .slick-arrow {
+                    position: absolute;
+                    z-index: 5;
+                    width: 30px;
+                    height: 15px;
+                    cursor: pointer;
+                }
+                .slick-next {
+                    right: 20px;
+                    top: 12px;
+                }
+                .slick-prev {
+                    left: 20px;
+                    top: 12px;
+                }
+                .slick-track {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                }
+            }
+            img {
+                width: 100%;
+                height: auto;
+                overflow: hidden;
+                background-position: center;
+                background-size: cover;
+            }
+            .header__border__body_correction {
+                border-top: 1px solid #D8C594;
+                border-bottom: 1px solid #D8C594;
+                p {
+                    font-family: Didact Gothic;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 16px;
+                    text-align: center;
+                    color: #A88A8A;
+                }
+            }
+            h2 {
+                font-family: Mak;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 22px;
+                line-height: 26px;
+                padding: 25px 0 25px 0;
+                text-align: center;
+                color: #A88A8A;
+            }
+            &__text {
+                padding: 25px 45px 30px 45px;
+                ul li {
+                    list-style-type: disc;
+                    margin-left: 15px;
+                }
+                h3 {
+                    padding-top: 20px;
+                    font-family: Didact Gothic;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 16px;
+                    text-transform: uppercase;
+                    color: #A88A8A;
+                }
+                p {
+                    font-family: Didact Gothic;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 16px;
+                    text-align: justify;
+                    color: #777575;
+                }
+            }
+            .btn-body_correction {
                 margin: 0 0 40px 0;
             }
         }
@@ -528,9 +720,40 @@
                 padding: 0;
             }
         }
-        &__list__price {
-            .btn-service_price {
+        &__laser_medicine {
+            .btn-laser_medicine {
                 display: none;
+            }
+            .item {
+                display: flex;
+                flex-direction: row;
+            }
+            .header__border__laser_medicine {
+                border-top: none;
+            }
+        }
+        &__face {
+            .btn-face {
+                display: none;
+            }
+            .item {
+                display: flex;
+                flex-direction: row;
+            }
+            .header__face_medicine {
+                border-top: none;
+            }
+        }
+        &__body_correction {
+            .btn-body_correction {
+                display: none;
+            }
+            .item {
+                display: flex;
+                flex-direction: row;
+            }
+            .header__body_correction_medicine {
+                border-top: none;
             }
         }
     }

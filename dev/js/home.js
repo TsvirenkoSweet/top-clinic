@@ -142,12 +142,58 @@ $(document).ready(function() {
         });
     }
 
-    $('.section__list__price__container__slider').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        focusOnSelect: true,
-        autoplay: false,
-        prevArrow: '<img src="./img/images/slide_prev.png" class="slick-prev">',
-        nextArrow: '<img src="./img/images/slide_next.png" class="slick-next">'
+    $('.section__laser_medicine__container__slider').slick({
+        responsive: [{
+                breakpoint: 2500,
+                settings: "unslick"
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    focusOnSelect: true,
+                    autoplay: false,
+                    prevArrow: '<img src="./img/images/slide_prev.png" class="slick-prev">',
+                    nextArrow: '<img src="./img/images/slide_next.png" class="slick-next">'
+                }
+            }
+        ]
+    });
+    $('.section__face__container__slider').slick({
+        responsive: [{
+                breakpoint: 2500,
+                settings: "unslick"
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    focusOnSelect: true,
+                    autoplay: false,
+                    prevArrow: '<img src="./img/images/slide_prev.png" class="slick-prev">',
+                    nextArrow: '<img src="./img/images/slide_next.png" class="slick-next">'
+                }
+            }
+        ]
+    });
+    $('.section__body_correction__container__slider').slick({
+        responsive: [{
+                breakpoint: 2500,
+                settings: "unslick"
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    focusOnSelect: true,
+                    autoplay: false,
+                    prevArrow: '<img src="./img/images/slide_prev.png" class="slick-prev">',
+                    nextArrow: '<img src="./img/images/slide_next.png" class="slick-next">'
+                }
+            }
+        ]
     });
 });
