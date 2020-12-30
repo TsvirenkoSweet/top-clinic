@@ -13,6 +13,7 @@ $(document).ready(function() {
     priceHandler();
     mobileClinicSectionHandler();
     scrollToElServiceHandler();
+    laserMedicineHandler();
 
     function scrollToElServiceHandler() {
         $('.section__services__list__item').on('click', function(e) {
@@ -196,4 +197,13 @@ $(document).ready(function() {
             }
         ]
     });
+
+    function laserMedicineHandler() {
+        $('.section__laser_medicine__list__items').on('click', function() {
+            const s = '.section__laser_medicine__description';
+            $(`${s}__item`).hide().removeClass('active');
+            $(`${s}__item[data-service-id="${$(this).data('service-list-id')}"]`).fadeIn(300);
+            $(`${s}__btn .btn`).attr('href', $(this).data('service-link'));
+        });
+    }
 });

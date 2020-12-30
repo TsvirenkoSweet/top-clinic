@@ -313,6 +313,13 @@
     &__laser_medicine {
         background: #ffffff;
         &__container {
+            .section__laser_medicine__list__items {
+                display: inline-block;
+                display: none;
+            }
+            .section__laser_medicine__description__heading {
+                display: none;
+            }
             &__slider {
                 width: 100%;
                 height: auto;
@@ -407,6 +414,13 @@
     &__face {
         background: #ffffff;
         &__container {
+            .section__face__list__items {
+                display: inline-block;
+                display: none;
+            }
+            .section__face__description__heading {
+                display: none;
+            }
             &__slider {
                 width: 100%;
                 height: auto;
@@ -501,6 +515,13 @@
     &__body_correction {
         background: #ffffff;
         &__container {
+            .section__body_correction__list__items {
+                display: inline-block;
+                display: none;
+            }
+            .section__body_correction__description__heading {
+                display: none;
+            }
             &__slider {
                 width: 100%;
                 height: auto;
@@ -721,39 +742,201 @@
             }
         }
         &__laser_medicine {
+            .item {
+                display: none;
+            }
+            .active {
+                display: block;
+            }
+            h2 {
+                font-weight: 300;
+                font-size: 64px;
+                line-height: 77px;
+            }
             .btn-laser_medicine {
                 display: none;
             }
-            .item {
+            .section__laser_medicine__description__item {
                 display: flex;
                 flex-direction: row;
+                justify-content: center;
+                margin: 0 auto;
+                padding-bottom: 170px;
+            }
+            .section__laser_medicine__description__heading {
+                display: block;
+                font-family: Didact Gothic;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 50px;
+                line-height: 66px;
+                color: #A88A8A;
+                padding-top: 122px;
+                width: 50%;
+                text-align: center;
+            }
+            .section__laser_medicine__container__text {
+                margin: 122px 25px 0 25px;
+                max-width: 550px;
+                padding: 0;
+                width: 50%;
             }
             .header__border__laser_medicine {
                 border-top: none;
             }
+            .header__border__laser_medicine p {
+                display: none;
+            }
+            .section__laser_medicine__list__items li {
+                display: inline;
+                margin-right: 25px;
+                font-family: HelveticaNeueCyr;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 16px;
+                color: #A88A8A;
+                cursor: pointer;
+            }
+            .section__laser_medicine__list__items li:hover {
+                border-bottom: 1px solid #A88A8A;
+            }
+            .section__laser_medicine__list__items {
+                display: block;
+                text-align: center;
+                margin: 25px 0 25px 0;
+            }
         }
         &__face {
+            .item {
+                display: none;
+            }
+            .active {
+                display: block;
+            }
+            h2 {
+                font-weight: 300;
+                font-size: 64px;
+                line-height: 77px;
+            }
             .btn-face {
                 display: none;
             }
-            .item {
+            .section__face__description__item {
                 display: flex;
                 flex-direction: row;
+                justify-content: center;
+                margin: 0 auto;
+                padding-bottom: 170px;
             }
-            .header__face_medicine {
+            .section__face__description__heading {
+                display: block;
+                font-family: Didact Gothic;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 50px;
+                line-height: 66px;
+                color: #A88A8A;
+                padding-top: 122px;
+                width: 50%;
+                text-align: center;
+            }
+            .section__face__container__text {
+                margin: 122px 25px 0 25px;
+                max-width: 550px;
+                padding: 0;
+                width: 50%;
+            }
+            .header__border__face {
                 border-top: none;
+            }
+            .header__border__face p {
+                display: none;
+            }
+            .section__face__list__items li {
+                display: inline;
+                margin-right: 25px;
+                font-family: HelveticaNeueCyr;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 16px;
+                color: #A88A8A;
+                cursor: pointer;
+            }
+            .section__face__list__items li:hover {
+                border-bottom: 1px solid #A88A8A;
+            }
+            .section__face__list__items {
+                display: block;
+                text-align: center;
+                margin: 25px 0 25px 0;
             }
         }
         &__body_correction {
+            .item {
+                display: none;
+            }
+            .active {
+                display: block;
+            }
+            h2 {
+                font-weight: 300;
+                font-size: 64px;
+                line-height: 77px;
+            }
             .btn-body_correction {
                 display: none;
             }
-            .item {
+            .section__body_correction__description__item {
                 display: flex;
                 flex-direction: row;
+                justify-content: center;
+                margin: 0 auto;
+                padding-bottom: 170px;
             }
-            .header__body_correction_medicine {
+            .section__body_correction__description__heading {
+                display: block;
+                font-family: Didact Gothic;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 50px;
+                line-height: 66px;
+                color: #A88A8A;
+                padding-top: 122px;
+                width: 50%;
+                text-align: center;
+            }
+            .section__body_correction__container__text {
+                margin: 122px 25px 0 25px;
+                max-width: 550px;
+                padding: 0;
+                width: 50%;
+            }
+            .header__border__body_correction {
                 border-top: none;
+            }
+            .header__border__body_correction p {
+                display: none;
+            }
+            .section__body_correction__list__items li {
+                display: inline;
+                margin-right: 25px;
+                font-family: HelveticaNeueCyr;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 16px;
+                color: #A88A8A;
+                cursor: pointer;
+            }
+            .section__body_correction__list__items li:hover {
+                border-bottom: 1px solid #A88A8A;
+            }
+            .section__body_correction__list__items {
+                display: block;
+                text-align: center;
+                margin: 25px 0 25px 0;
             }
         }
     }
@@ -884,6 +1067,204 @@
         }
         &__instagram {
             padding: 100px 0;
+        }
+        &__laser_medicine {
+            .item {
+                display: none;
+            }
+            .active {
+                display: block;
+            }
+            h2 {
+                font-weight: 300;
+                font-size: 64px;
+                line-height: 77px;
+            }
+            .btn-laser_medicine {
+                display: none;
+            }
+            .section__laser_medicine__description__item {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin: 0 auto;
+                padding-bottom: 170px;
+            }
+            .section__laser_medicine__description__heading {
+                display: block;
+                font-family: Didact Gothic;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 50px;
+                line-height: 66px;
+                color: #A88A8A;
+                padding-top: 122px;
+                width: 50%;
+                text-align: center;
+            }
+            .section__laser_medicine__container__text {
+                margin: 122px 25px 0 25px;
+                max-width: 550px;
+                padding: 0;
+                width: 50%;
+            }
+            .header__border__laser_medicine {
+                border-top: none;
+            }
+            .header__border__laser_medicine p {
+                display: none;
+            }
+            .section__laser_medicine__list__items li {
+                display: inline;
+                margin-right: 25px;
+                font-family: HelveticaNeueCyr;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 16px;
+                color: #A88A8A;
+                cursor: pointer;
+            }
+            .section__laser_medicine__list__items li:hover {
+                border-bottom: 1px solid #A88A8A;
+            }
+            .section__laser_medicine__list__items {
+                display: block;
+                text-align: center;
+                margin: 25px 0 25px 0;
+            }
+        }
+        &__face {
+            .item {
+                display: none;
+            }
+            .active {
+                display: block;
+            }
+            h2 {
+                font-weight: 300;
+                font-size: 64px;
+                line-height: 77px;
+            }
+            .btn-face {
+                display: none;
+            }
+            .section__face__description__item {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin: 0 auto;
+                padding-bottom: 170px;
+            }
+            .section__face__description__heading {
+                display: block;
+                font-family: Didact Gothic;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 50px;
+                line-height: 66px;
+                color: #A88A8A;
+                padding-top: 122px;
+                width: 50%;
+                text-align: center;
+            }
+            .section__face__container__text {
+                margin: 122px 25px 0 25px;
+                max-width: 550px;
+                padding: 0;
+                width: 50%;
+            }
+            .header__border__face {
+                border-top: none;
+            }
+            .header__border__face p {
+                display: none;
+            }
+            .section__face__list__items li {
+                display: inline;
+                margin-right: 25px;
+                font-family: HelveticaNeueCyr;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 16px;
+                color: #A88A8A;
+                cursor: pointer;
+            }
+            .section__face__list__items li:hover {
+                border-bottom: 1px solid #A88A8A;
+            }
+            .section__face__list__items {
+                display: block;
+                text-align: center;
+                margin: 25px 0 25px 0;
+            }
+        }
+        &__body_correction {
+            .item {
+                display: none;
+            }
+            .active {
+                display: block;
+            }
+            h2 {
+                font-weight: 300;
+                font-size: 64px;
+                line-height: 77px;
+            }
+            .btn-body_correction {
+                display: none;
+            }
+            .section__body_correction__description__item {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin: 0 auto;
+                padding-bottom: 170px;
+            }
+            .section__body_correction__description__heading {
+                display: block;
+                font-family: Didact Gothic;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 50px;
+                line-height: 66px;
+                color: #A88A8A;
+                padding-top: 122px;
+                width: 50%;
+                text-align: center;
+            }
+            .section__body_correction__container__text {
+                margin: 122px 25px 0 25px;
+                max-width: 550px;
+                padding: 0;
+                width: 50%;
+            }
+            .header__border__body_correction {
+                border-top: none;
+            }
+            .header__border__body_correction p {
+                display: none;
+            }
+            .section__body_correction__list__items li {
+                display: inline;
+                margin-right: 25px;
+                font-family: HelveticaNeueCyr;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 16px;
+                color: #A88A8A;
+                cursor: pointer;
+            }
+            .section__body_correction__list__items li:hover {
+                border-bottom: 1px solid #A88A8A;
+            }
+            .section__body_correction__list__items {
+                display: block;
+                text-align: center;
+                margin: 25px 0 25px 0;
+            }
         }
     }
 }
